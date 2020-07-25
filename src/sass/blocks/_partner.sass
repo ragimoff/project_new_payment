@@ -1,0 +1,86 @@
+.header
+    height: 30vh
+    align-content: center
+    border-bottom: 1px solid $white
+    background-color: $main-color
+    display: flex
+    align-items: center
+    justify-content: center
+    border-bottom: 1px solid $white
+    .logo
+        display: flex
+        align-items: center
+        &__rub
+            color: $white
+            font-size: 4em
+            font-family: 'ALSRublRegular'
+            border: 2px solid $white
+            border-radius: 50%
+            margin: 0
+            background-color: $logo-bg
+            padding: 0 12px 10px 10px
+        &__name
+            font-size: 2em
+            font-weight: 300
+            color: $white
+            text-transform: uppercase
+            margin-left: 10px
+            border-bottom: 2px solid
+            letter-spacing: 1px
+.main
+    background-color: $main-color
+    height: 55vh
+    border-bottom: 1px solid $white
+    display: table-row-group
+    &-content
+        display: flex
+        flex-direction: column
+        margin-top: 150px
+        &__description
+            margin: 0
+            font-family: 'Heading Pro'
+            font-style: italic
+            color: $white
+            font-size: 4em
+            &-center
+                display: flex
+                justify-content: center
+                padding-left: 35px
+            &-right
+                display: flex
+                justify-content: flex-end
+
+.footer
+    height: 15vh
+    background-color: $main-color
+    padding-top: 15px
+    .card-block
+        display: flex
+        justify-content: space-between
+        background-color: $white
+        padding: 5px
+        margin-bottom: 5px
+        .block-img
+                width: 70px
+                max-height: 35px
+    &-menu
+        display: flex
+        justify-content: space-evenly
+        &__link
+            color: $white
+            text-transform: uppercase
+            font-size: 14px
+            position: relative
+            &::before
+                content: '*'
+                position: absolute
+                left: -8px
+                top: 3px
+            &:last-child
+                &::after
+                    content: '*'
+                    position: absolute
+                    right: -10px
+                    top: 3px
+        
+
